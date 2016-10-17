@@ -1,0 +1,159 @@
+/***************************************************
+Add your Google Fonts
+Update ALL the named colours to create a monochromatic scheme
+Style the menus - one horizontally and one vertically
+Add the hover/active effects to your menu items
+***************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    /* ADD the Google sans-serif font to this font stack */
+    font-family: 'Neuton', 'Helvetica', 'Verdana', serif;
+}
+html, body{
+    background-color: #73707F;
+}
+h1{
+    font-size: 6.854rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: 'Montserrat', 'Georgia', 'Garamond', sans-serif;
+    padding: 1rem 2rem;
+}
+h2{
+    font-size: 4.23rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: 'Montserrat', 'Georgia', 'Garamond', sans-serif;
+    padding: 1rem 2rem;
+}
+nav li{
+    font-size: 2.618rem;
+}
+p{
+    font-size: 1.618rem;
+    padding: 1rem 2rem;
+}
+.wrapper{
+    max-width: 1400px; 
+    width: 80%;
+    margin: 0 auto;
+    background-color: #B7B3CC;
+    color: #534A7F;
+}
+header{
+    /*border-bottom: 0.8rem solid #B7B3CC;*/
+    background-color: #534A7F;
+    color: aliceblue;
+}
+aside{
+    width: 20%;
+    display: inline-block;
+    height: 3rem;
+    float: left;
+}
+.menu-h{
+    width: 76%;
+    float: right;
+    margin-right: 2%;
+    border: #534A7F solid 3px;
+    border-top: none;
+}
+    .menu-h li{
+        /* style the list items to remove the bullets 
+        and line up horizontally
+        and take up 20% of the width of the ul */
+        width: 20%;
+        height: 3rem;
+        display: inline;
+        float: left;
+        padding: 0.2rem 1rem;
+        background-color: #E5E0FF;
+        font-size: 1.4rem;
+        list-style-type: none;
+        text-align: center;
+    }
+        .menu-h a,
+        .menu-h a:link,
+        .menu-h a:visited{
+            /* style the anchors to fill the entire width of the li 
+            make sure there is padding around your text */
+            width: 100%;
+            display: inline-block;
+            padding: 0 0.5rem ;
+            color: #534A7F;
+            text-decoration: none;
+        }
+        .menu-h a:hover,
+        .menu-h a:active{
+            background-color: #A593FF;
+            font-weight: bold;
+            text-shadow: #534A7F 2px 2px 2px;
+            border: #534A7F solid 2px;
+            box-shadow: #73707F 3px 3px 3px;
+            color: #E5E0FF;
+        }
+.menu-v{
+    width: 18%;
+    float:left;
+    margin: 2% 0 2% 2%;
+    border: #534A7F solid 3px;
+}
+    .menu-v li{
+        /* style the list items to remove the bullets 
+        and line up vertically
+        and take up 100% of the width of the ul */
+        width: 100%;
+        list-style-type: none;
+        float: left;
+        /*padding: 1rem 0.5rem;*/
+        background-color: #E5E0FF;
+        font-size: 2rem;
+        border-bottom: #534A7F solid 3px;
+    }
+    .menu-v li:last-child{
+        border-bottom: 0;
+    }
+        .menu-v a,
+        .menu-v a:link,
+        .menu-v a:visited{
+            /* style the anchors to fill the entire width of the li */
+            display: block;
+            width: 100%;
+            padding: 0 0.5rem ;
+            color: #534A7F;
+            text-decoration: none;
+        }
+        .menu-v a:hover,
+        .menu-v a:active{
+            background-color: #A593FF;
+            font-weight: bold;
+            text-shadow: #534A7F 2px 2px 2px;
+            color: #E5E0FF;
+        }
+main{
+    width:76%;
+    float: right;
+    margin: 2%;
+    border: #534A7F solid 3px;
+    background-color: #E5E0FF;
+}
+footer{
+    clear: both;
+    border-top: 0.2rem solid #E5E0FF;
+}
+footer p {
+    font-family: 'Montserrat', 'Georgia', 'Garamond', sans-serif;
+    font-size: 90%;
+    text-align: right;
+}
+h1 span{
+    display: inline-block;
+}
+#myName {
+    font-size: 25%;
+    color: #B7B3CC;
+}
