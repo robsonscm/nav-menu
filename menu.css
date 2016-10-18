@@ -24,6 +24,13 @@ h1{
     font-family: 'Montserrat', 'Georgia', 'Garamond', sans-serif;
     padding: 1rem 2rem;
 }
+    h1 span{
+        display: inline-block;
+    }
+        #myName {
+            font-size: 25%;
+            color: #B7B3CC;
+        }
 h2{
     font-size: 4.23rem;
     /* ADD the Google serif font to this font stack */
@@ -45,22 +52,16 @@ p{
     color: #534A7F;
 }
 header{
-    /*border-bottom: 0.8rem solid #B7B3CC;*/
     background-color: #534A7F;
     color: aliceblue;
+    overflow: auto;
 }
-aside{
-    width: 20%;
-    display: inline-block;
-    height: 3rem;
-    float: left;
-}
+
 .menu-h{
-    width: 76%;
+    width: 100%;
     float: right;
-    margin-right: 2%;
-    border: #534A7F solid 3px;
-    border-top: none;
+    border-bottom: #534A7F solid 3px;
+    overflow: auto;
 }
     .menu-h li{
         /* style the list items to remove the bullets 
@@ -99,8 +100,9 @@ aside{
 .menu-v{
     width: 18%;
     float:left;
-    margin: 2% 0 2% 2%;
+    margin: 1.5em 0 1.5em 1.5em;
     border: #534A7F solid 3px;
+    overflow: auto;
 }
     .menu-v li{
         /* style the list items to remove the bullets 
@@ -109,13 +111,13 @@ aside{
         width: 100%;
         list-style-type: none;
         float: left;
-        /*padding: 1rem 0.5rem;*/
+        clear: both;
         background-color: #E5E0FF;
         font-size: 2rem;
         border-bottom: #534A7F solid 3px;
     }
     .menu-v li:last-child{
-        border-bottom: 0;
+        border-bottom: none;
     }
         .menu-v a,
         .menu-v a:link,
@@ -123,23 +125,24 @@ aside{
             /* style the anchors to fill the entire width of the li */
             display: block;
             width: 100%;
-            padding: 0 0.5rem ;
+            padding: 0 0.8rem ;
             color: #534A7F;
             text-decoration: none;
         }
         .menu-v a:hover,
         .menu-v a:active{
-            background-color: #A593FF;
+            background-color: #534A7F;
             font-weight: bold;
-            text-shadow: #534A7F 2px 2px 2px;
             color: #E5E0FF;
+            box-shadow: inset #A593FF -3px -3px 4px, inset #E5E0FF 1px 1px 2px;
         }
 main{
     width:76%;
     float: right;
-    margin: 2%;
+    margin: 1.5em;
     border: #534A7F solid 3px;
     background-color: #E5E0FF;
+    overflow: auto;
 }
 footer{
     clear: both;
@@ -149,11 +152,4 @@ footer p {
     font-family: 'Montserrat', 'Georgia', 'Garamond', sans-serif;
     font-size: 90%;
     text-align: right;
-}
-h1 span{
-    display: inline-block;
-}
-#myName {
-    font-size: 25%;
-    color: #B7B3CC;
 }
